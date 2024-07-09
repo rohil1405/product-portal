@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width:100%;
+    gap: 20px;
 }
 
 #product-list {
@@ -17,6 +18,7 @@
     background-color: #fff;
     box-shadow: 0 0 0 2px black;
     width:15%;
+    margin-top:40px;
 }
 
 img {

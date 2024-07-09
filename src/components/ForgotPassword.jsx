@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Input from './UI/Input';
 import Button from './UI/Button';
+import './Password.css';
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
@@ -23,8 +24,8 @@ const ForgotPassword = () => {
 
   return (
     <section>
-      <div className='forgot-wrap'>
-        <div className='forgot-main'>
+      <div className='password-wrap'>
+        <div className='password-main'>
           <h1>Forgot Password</h1>
           <form onSubmit={handleForgot}>
             <Input 
@@ -36,7 +37,7 @@ const ForgotPassword = () => {
               onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })}
             />
             
-            <Button id="forgot" text="Forgot Password" />
+            <Button id="password" text="Forgot Password" />
           </form>
         </div>
       </div>

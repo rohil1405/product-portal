@@ -21,6 +21,10 @@ const ProductList = () => {
         fetchApiData(API);
     }, []);
 
+    if (!products) {
+        return <p>Loading...</p>;
+    }
+
     return (
         <>
             <section className='product-list'>

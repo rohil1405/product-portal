@@ -54,7 +54,7 @@ const Register = () => {
 
             <Button id="register" text="Register" />
             
-            <LinkComponent to="/login" text="Have already an account? Login here" />
+            <LinkComponent to="/login" text='Have already an account?' textBold="Login here" />
           </form>
         </div>
       </section>

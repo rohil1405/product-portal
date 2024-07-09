@@ -16,8 +16,13 @@ const Login = () => {
     e.preventDefault();
     const loggeduser = JSON.parse(localStorage.getItem('user'));
 
+    if (!loggeduser) {
+      alert('User not found. Please register.');
+      return;
+    }
+
     if (input.email === loggeduser.email && input.password === loggeduser.password) {
-      localStorage.setItem('loggedin', true);
+      localStorage.setItem('loggedin', 'true');
       navigate('/');
     } else {
       alert('Enter Valid Email and Password');
@@ -53,8 +58,7 @@ const Login = () => {
           </div>
 
           <Button id="login" text="Login" />
-          <LinkComponent to="/register" text="Don't have an account? Register here" />
-
+          <LinkComponent to="/register" text="Don't have an account?" textBold="Register here" />
         </form>
       </div>
     </section>

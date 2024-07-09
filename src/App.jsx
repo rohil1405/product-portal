@@ -7,6 +7,7 @@ import ProtectedAuth from './services/ProtectedAuth';
 import ProductDetails from './components/ProductDetails';
 import ForgotPassword from './components/ForgotPassword.jsx';
 import ResetPassword from './components/ResetPassword.jsx';
+import UserProfile from './components/UserProfile.jsx';
 
 function app() {
   return (
@@ -20,6 +21,7 @@ function app() {
             <Route path='/' element={<ProtectedAuth />}>
                 <Route path='/' element={<Home />} />
                 <Route path="product/:id" element={<ProductDetails />} />
+                <Route path='/profile' element={<UserProfile />} />
             </Route>
         </Routes>
       </BrowserRouter>

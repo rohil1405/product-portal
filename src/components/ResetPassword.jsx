@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Input from './UI/Input';
 import Button from './UI/Button';
+import './Password.css';
 
 const ResetPassword = () => {
   const navigate = useNavigate();
@@ -10,10 +11,24 @@ const ResetPassword = () => {
     confirmPassword: ''
   });
 
-  function handleReset(e) {
+  const handleReset = (e) => {
     e.preventDefault();
-    // Reset password logic here
-  }
+    if (input.password !== input.confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+    const loggeduser = JSON.parse(localStorage.getItem('user'));
+
+    if (!loggeduser) {
+      alert('User not found. Please register.');
+      return;
+    }
+
+    loggeduser.password = input.password;
+    localStorage.setItem('user', JSON.stringify(loggeduser));
+    localStorage.removeItem('ForgotPassword');
+    navigate('/login');
+  };
 
   return (
     <section>
@@ -42,7 +57,7 @@ const ResetPassword = () => {
                 ...input, 
                 [e.target.name]: e.target.value })}
             />
-            <Button id="reset" text="Reset Password" />
+            <Button id="password" text="Reset Password" />
           </form>
         </div>
       </div>
