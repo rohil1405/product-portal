@@ -1,0 +1,76 @@
+body {
+    background-image: url('../img4.webp');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#section-login-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 8.64em;
+}
+
+#login-wrap {
+    border: 0;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 93.5%;
+    padding: 10px;
+    font-size: 16px;;
+}
+
+.input-wrap {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+#login-btn {
+    display: flex;
+    padding: 20px;
+}
+
+#btn {
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 7px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#register-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+#forgot-link {
+    text-align: end;
+}
+
+#forgot-link a {
+    text-decoration: none;
+}
+
+
+
+form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}

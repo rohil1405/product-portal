@@ -1,0 +1,64 @@
+body {
+    background-image: url('../img4.webp');
+    object-fit: cover;
+    background-repeat: repeat;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#section-register-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.64em;
+}
+
+#register-wrap {
+    border: 0;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 93.5%;
+    padding: 10px;
+}
+
+.input-wrap {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+#register-btn {
+    display: flex;
+    padding: 20px;
+}
+
+#btn {
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 7px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#login-link {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
